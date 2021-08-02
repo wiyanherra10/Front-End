@@ -1,0 +1,294 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.icons>.my-icon {
+    box-sizing: border-box !important;
+    color: rgba(90, 80, 89, 1);
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: calc(99% / 3) !important;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.add-icon,
+.read-icon,
+.unread-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    color: aliceblue;
+}
+
+.read-icon {
+    background-color: green;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.read-icon:hover {
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: green;
+}
+
+.unread-icon {
+    background-color: red;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.unread-icon:hover {
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: red;
+}
+
+.add-icon {
+    background-color: orange;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.add-icon:hover {
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: orange;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: cornflowerblue;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: cornflowerblue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    display: flex;
+    box-sizing: border-box !important;
+    justify-content: space-between;
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: cornflowerblue;
+}
+
+.read-button {
+    font-family: uicons-regular-rounded !important;
+    content: '\f10b' !important;
+    padding: 10px;
+    background-color: green;
+    width: 50%;
+    height: auto;
+    margin: 10px 0 10px 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.read-button:before {
+    content: '\f12f';
+}
+
+.unread-button {
+    font-family: uicons-regular-rounded !important;
+    content: '\f131' !important;
+    padding: 10px;
+    background-color: red;
+    width: 50%;
+    height: auto;
+    margin: 10px 0 10px 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.unread-button:before {
+    content: '\f131';
+}
+
+.trash-book {
+    font-family: uicons-regular-rounded !important;
+    content: '\f24a' !important;
+    padding: 10px;
+    background-color: orange;
+    width: 50%;
+    height: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.trash-book:before {
+    content: '\f24a';
+}
+
+.book_list {
+    box-sizing: border-box;
+    width: 49.3%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 5px;
+    align-items: center;
+    box-sizing: border-box !important;
+    justify-content: space-around;
+}
+
+.content-book {
+    display: flex;
+    box-sizing: border-box !important;
+    justify-content: space-between;
+}
+
+@media  screen and (max-width: 576px) {
+    .content,
+    .content-book {
+        flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .book_list {
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content,
+    .content-book {
+        flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .book_list {
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+}
